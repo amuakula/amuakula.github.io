@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>320FinalProject</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>320FinalProject (2)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7839,9 +7839,9 @@ a.anchor-link {
 <td>Contributed to initial idea; worked on T-Testing for part C; wrote final tutorial</td>
 </tr>
 <tr>
-<td>Leann</td>
+<td>Leeann</td>
 <td>A, B, C, F</td>
-<td>Contributed to initial idea; worked on ANOVA tests in part C; worked on data visualizations</td>
+<td>Contributed to initial idea; worked on ANOVA and Tukey tests in part C; worked on data visualizations</td>
 </tr>
 <tr>
 <td>Luke</td>
@@ -7851,7 +7851,7 @@ a.anchor-link {
 <tr>
 <td>Neha</td>
 <td>A, B, C, F</td>
-<td>Contributed to initial idea; worked on ANOVA tests in part C; worked on data visualizations</td>
+<td>Contributed to initial idea; worked on ANOVA and Tukey tests in part C; worked on data visualizations</td>
 </tr>
 <tr>
 <td>Richard</td>
@@ -7879,7 +7879,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># ===== Imports ========================</span>
@@ -7924,7 +7924,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># ==== Loading CSV &amp; .describe() =====================</span>
@@ -7942,7 +7942,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[55]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div class="colab-df-container" id="df-ee55fc08-908d-4a2f-b04c-c03a9878de8f">
 <div>
@@ -8228,7 +8228,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">numeric_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Rank"</span><span class="p">,</span> <span class="s2">"Year"</span><span class="p">,</span> <span class="s2">"NA_Sales"</span><span class="p">,</span> <span class="s2">"EU_Sales"</span><span class="p">,</span> <span class="s2">"JP_Sales"</span><span class="p">,</span> <span class="s2">"Other_Sales"</span><span class="p">,</span> <span class="s2">"Global_Sales"</span><span class="p">]</span>
@@ -8268,7 +8268,7 @@ Global_Sales: 1893 outliers
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[56]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>&lt;Axes: &gt;</pre>
 </div>
@@ -8292,11 +8292,11 @@ Global_Sales: 1893 outliers
 <h1 id="Several-things-can-be-noted-about-the-data-using-.describe().">Several things can be noted about the data using .describe().<a class="anchor-link" href="#Several-things-can-be-noted-about-the-data-using-.describe().">¶</a></h1><ul>
 <li>There are 11 features to this data, with 7 numerical and 4 string.</li>
 <li>Almost all games have publishers, with the most common being Electronic Arts</li>
-<li>There are 16598 games, yet only 11493 unique names. Some games appear multiple times as they are republished on different platforms</li>
-<li>This data does not represent buyer demographic, only sales</li>
-<li>Action is the most common genre with around 20% total</li>
-<li>With mean games of 2006 and a span of 40 years starting in 1980, the number of games released increases with time.</li>
-<li>NA, EU, and JP sales make up the bulk of global sales and the ratio created by these sales is consistent</li>
+<li>There are 16598 games, yet only 11493 unique names. Some games appear multiple times as they are republished on different platforms.</li>
+<li>This data does not represent buyer demographic, only sales.</li>
+<li>Action is the most common genre with around 20% total.</li>
+<li>The mean release year for these video games was 2006, and the dataset spanned 40 years starting in 1980, with the number of games released per year increasing with time.</li>
+<li>NA, EU, and JP sales make up the bulk of global sales and the ratio created by these sales is consistent.</li>
 <li>The top game, Wii Sports, laps the next best selling by a factor of 2 and is the biggest outlier of the set.</li>
 </ul>
 </div>
@@ -8318,7 +8318,7 @@ Global_Sales: 1893 outliers
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># printing the duplicates</span>
@@ -8393,7 +8393,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
@@ -8407,7 +8407,7 @@ dtype: int64
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[58]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8527,7 +8527,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># getting all of the genres</span>
@@ -8567,7 +8567,7 @@ p-value: 1.3349239855922282e-36
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">means</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"Genre"</span><span class="p">)[</span><span class="s2">"Global_Sales"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -8601,7 +8601,7 @@ p-value: 1.3349239855922282e-36
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">tukey</span> <span class="o">=</span> <span class="n">pairwise_tukeyhsd</span><span class="p">(</span>
@@ -8729,7 +8729,7 @@ Role-Playing     Strategy  -0.3698    0.0 -0.6073 -0.1324   True
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">contingency_table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Genre'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Platform'</span><span class="p">])</span>
@@ -8744,7 +8744,7 @@ Role-Playing     Strategy  -0.3698    0.0 -0.6073 -0.1324   True
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div class="colab-df-container" id="df-d02f1c48-73e9-41b6-81fd-979dc556cf06">
 <div>
@@ -9238,7 +9238,7 @@ Role-Playing     Strategy  -0.3698    0.0 -0.6073 -0.1324   True
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># calculating percentages of each genre per platform</span>
@@ -9291,7 +9291,7 @@ Role-Playing     Strategy  -0.3698    0.0 -0.6073 -0.1324   True
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">chi2</span><span class="p">,</span> <span class="n">p_value</span><span class="p">,</span> <span class="n">dof</span><span class="p">,</span> <span class="n">expected</span> <span class="o">=</span> <span class="n">chi2_contingency</span><span class="p">(</span><span class="n">contingency_table</span><span class="p">)</span>
@@ -9344,7 +9344,7 @@ p-value: 0.0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Running T-test for each region's sales</span>
@@ -9411,7 +9411,7 @@ Total T-Statistic: 6.918653019434493 Total P-Value: 5.9243822453190935e-12
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -9484,7 +9484,7 @@ Total T-Statistic: 6.918653019434493 Total P-Value: 5.9243822453190935e-12
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># conversion to right-tailed p-value</span>
@@ -9531,8 +9531,8 @@ Total T-Statistic: 6.918653019434493 Total P-Value: 5.9243822453190935e-12
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Primary-Analysis"><strong>Primary Analysis</strong><a class="anchor-link" href="#Primary-Analysis">¶</a></h1><p>In the analysis phase, we have decided to use a Ridge regression model for predicting total sales of video games globally based on their correlation with game attributes as gathered during exploratory analysis due to its ability to allow for complex relationships to be classified as high dimensional. Looking at our data summary, the categorical features of 'Publisher' and 'Platform' were noted as being relevant but having large numbers of unique entries in those categories, so we used target encoding with smoothing to provide usable representations for these categorical variables in our Ridge regression model. Using this method, we will eliminate the added computational cost of using one-hot encoding and manage to avoid the high sparsity issue that one-hot encodes would cause.</p>
-<p>We have employed TF-IDF Vectorization to enrich our prediction ability and capture the predictive power in video game titles. We have also used a TransformedTargetRegressor to perform a log transformation on global sales data; this log transformation is a mechanical requirement, as our initial examination revealed that data has a substantial right-skew due to “blockbuster” outliers, such as Wii Sports. Finally, rather than using standard linear regression models, we chose Ridge Regression at the same time that we were developing our model because of Ridge Regression’s regularization penalty, which is necessary to prevent our model from overfitting when there are thousands of engineered features in the dataset and provides for reproducibility, generalizability, and universality to an unknowledgeable reader.</p>
+<h1 id="Primary-Analysis"><strong>Primary Analysis</strong><a class="anchor-link" href="#Primary-Analysis">¶</a></h1><p>In the analysis phase, we have decided to use a Ridge regression model for predicting total global video game sales based on their relationships with game attributes, as gathered during exploratory analysis. We chose Ridge regression because it performs well for high-dimensional data and reduces overfitting when features are correlated across our dataset using a regularization penalty. Looking at our data summary, the categorical features of 'Publisher' and 'Platform' were noted as being relevant but having large numbers of unique entries in those categories, so we used target encoding with smoothing to provide usable representations for these categorical variables in our Ridge regression model. Using this method, we reduce the added computational cost of using one-hot encoding and manage to avoid the high sparsity issue that one-hot encodings would cause.</p>
+<p>To incorporate textual information, we used TF-IDF Vectorization on game titles to capture predictive patterns in video game titles (such as naming conventions and keywords). We have also used a TransformedTargetRegressor to perform a log transformation on global sales data; this log transformation is useful for addressing skew, as our initial examination revealed that data has a substantial right-skew due to “blockbuster” outliers, such as Wii Sports.  Overall, Ridge regression and these other techniques provide for reproducibility, generalizability, and universality to an unknowledgeable reader.</p>
 </div>
 </div>
 </div>
@@ -9541,7 +9541,7 @@ Total T-Statistic: 6.918653019434493 Total P-Value: 5.9243822453190935e-12
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s2">"Global_Sales"</span><span class="p">])</span>
@@ -9796,7 +9796,7 @@ Total T-Statistic: 6.918653019434493 Total P-Value: 5.9243822453190935e-12
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># training parameters, shorten or longen train time here. minimal effect with more candidates</span>
@@ -9848,7 +9848,7 @@ Best parameters:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [70]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">best_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
@@ -9925,7 +9925,7 @@ SMAPE improvement: 8.566341070533328 %
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">comparison</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -9993,7 +9993,7 @@ SpongeBob SquarePants: Battle for Bikini Bottom       XB 2003.0     Platform    
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">metrics_to_plot</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"MAE"</span><span class="p">,</span> <span class="s2">"RMSE"</span><span class="p">,</span> <span class="s2">"SMAPE"</span><span class="p">,</span> <span class="s2">"R2"</span><span class="p">]</span>
@@ -10035,7 +10035,7 @@ SpongeBob SquarePants: Battle for Bikini Bottom       XB 2003.0     Platform    
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [73]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
@@ -10108,7 +10108,7 @@ SpongeBob SquarePants: Battle for Bikini Bottom       XB 2003.0     Platform    
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [74]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">residuals</span> <span class="o">=</span> <span class="n">comparison</span><span class="p">[</span><span class="s2">"Actual_Global_Sales"</span><span class="p">]</span> <span class="o">-</span> <span class="n">comparison</span><span class="p">[</span><span class="s2">"Predicted_Global_Sales"</span><span class="p">]</span>
@@ -10168,7 +10168,7 @@ Residual Std:    1.8731
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [75]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">genre_errors</span> <span class="o">=</span> <span class="n">comparison</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"Genre"</span><span class="p">)[</span><span class="s2">"Absolute_Error"</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span>
@@ -10202,7 +10202,7 @@ Residual Std:    1.8731
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [76]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">platform_counts</span> <span class="o">=</span> <span class="n">comparison</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"Platform"</span><span class="p">)[</span><span class="s2">"Absolute_Error"</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
@@ -10239,7 +10239,7 @@ Residual Std:    1.8731
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [77]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">bins</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>
@@ -10329,7 +10329,7 @@ Sales_Bucket  Count  Median_AE  Median_Pct_Error
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [78]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">=== Top 10 Most Accurate Predictions ==="</span><span class="p">)</span>
@@ -10391,7 +10391,7 @@ Brain Age: Train Your Brain in Minutes a Day       DS     Misc                20
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [79]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">cv_results</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">cv_results_</span><span class="p">)</span>
@@ -10440,8 +10440,8 @@ Best CV MAE: 0.3992810405112642
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Insights-and-Conclusion"><strong>Insights and Conclusion</strong><a class="anchor-link" href="#Insights-and-Conclusion">¶</a></h1><p>Through this project, a reader that has little knowledge of gaming can understand how commercial successes of video games are actually generated. The evaluative process successfully connects numerical data to trends in the industry by illustrating that video games are not successful due to luck; rather, there is a significant correlation between commercial success and the types of genres, platforms and the timing when the game was created. The findings of the ANOVA proved that there are two types (Shooter and Platformer) of genres that consistently perform better than other categories (e.g., Racing, Discussion, and Adventure). The second part of the overall analysis shows that the collection of T-tests suggested that older video games had higher average sales per video game than more recent games. The overall analysis provides a clear narrative of how the market has changed over time in relation to video games. Finally, a reader new to video gaming will end this project with a sense of knowledge explaining; while "viral hits" are very difficult to identify, combinations of branding of the video game (based on the TF-IDF method of analyzing the titles gives) and having the support of an established publisher predictably expected to lead video games to commercial success statistically.</p>
-<p>This project represents an analysis of the gaming industry that goes beyond conventional "gamer" wisdom. Those who are intimately involved with the gaming industry probably know which game types and console manufacturers have high sales; however, the Tukey HSD post-hoc test provides exact sales rankings of game type, based on statistical criteria. Additionally, using the machine learning model provides an understanding of the "predictive weight" of the titles and publishers tested. Also, the "Sales Bucket" section of the analysis provides an informative perspective for an experienced reader in that it shows the model's capabilities in predicting mid-level success, and some of the inherent trouble modeling 10M+ games that frequently use external marketing and/or social use factors to achieve success. In conclusion, this study provides an informative and analytical view of the industry that should be of value to anyone with experience in the gaming industry.</p>
+<h1 id="Insights-and-Conclusion"><strong>Insights and Conclusion</strong><a class="anchor-link" href="#Insights-and-Conclusion">¶</a></h1><p>Through this project, a reader that has little knowledge of gaming can understand how commercial successes of video games are actually generated. The evaluative process successfully connects numerical data to trends in the industry by illustrating that video games are not successful due to luck; rather, there is a significant correlation between commercial success and the types of genres, platforms and the timing when the game was created. The findings of the ANOVA showed that there are two types of genres (Shooter and Platformer) that consistently perform better than other categories (e.g., Racing, Discussion, and Adventure). We also found from the collection of T-tests suggested that older video games had higher average sales per video game than more recent games. The overall analysis provides a clear narrative of how the market has changed over time in relation to video games. Finally, a reader new to video gaming will understand from this project while "viral hits" are very difficult to identify, combinations of video game branding (based on the TF-IDF method of analyzing the titles) and having an established publisher statistically predictive of greater commercial success.</p>
+<p>This project represents an analysis of the gaming industry that goes beyond conventional "gamer" wisdom. Those who are intimately involved with the gaming industry are more likely to know which game types and console manufacturers sell better; however, the Tukey HSD post-hoc test provides exact sales rankings of game type, based on statistical criteria. Additionally, the machine learning model provides an understanding of the "predictive weight" of the titles and publishers tested. Also, the "Sales Bucket" section of the analysis shows the model's capabilities in predicting mid-level success, and some of the inherent trouble in modeling 10M+ games that frequently use external marketing and/or social use factors to achieve success. In conclusion, this study provides an informative and analytical view that should be of value to anyone interested in the gaming industry.</p>
 </div>
 </div>
 </div>
